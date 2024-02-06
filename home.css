@@ -1,0 +1,6 @@
+body {
+	background-image: url("HomeBackground.png");
+	background-size: 100% 200%;
+	background-position: center bottom;
+	backdrop-filter: blur(10px);
+}

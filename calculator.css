@@ -1,0 +1,8 @@
+#GradeSubmit, #GradeClear {
+	display: inline-block;
+	border: 0px;
+	font-family: "arial";
+	padding: 7px 20px;
+	margin: auto;
+	cursor: pointer;
+}

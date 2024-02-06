@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	
+<div id="TopBar" class="TopBar">
+	<a href="index.html">Home</a>
+	<a class="Active">Arcane Calculator</a>
+	<a href="MathGenerator.html">Arcane Generators</a>
+	<a href="About.html">About</a>
+</div>
+	
+<br>
+	
+<head>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="calculator.css">
+	<script src="calculator.js"></script>
+	<title>Arcane Math - Calculators</title>
+	<header id="Title">Arcane Calculators</header>
+	<br>
+</head>
+	
+<body class="Container">
+	<div class="Contentwrap">
+	<div class="Box" id="Fractions">
+		<p1>Fractions</p1>
+		<hr id="FractionLine">
+		<p id="FractionAnswer">Enter two fractions and an asterisk. (only use spaces if there are mixed fraction(s).)</p>
+		<input type="text" placeholder="Example: 1 1/2*2 1/2" id="FractionInput">
+		<br>
+		<input type="button" value="Submit" id="FractionButton" onclick="Fraction();">
+	</div>
+	<br>
+	<div class="Box" id="Factorial">
+		<p1>Factorials</p1>
+		<hr id="FactLine">
+		<p id="FactText">I'll calculate factorials!</p>
+		<input type="number" id="FactNumber" placeholder="Enter the number here!">
+		<br>
+		<input type="button" value="Submit" onclick="FactSubmit()" id="FactSubmit">
+	</div>
+	<br>
+	<div class="Box" id="Grade">
+		<p1>Grades</p1>
+		<hr id="GradeLine">
+		<p id="GradeText">I'll calculate the overall grade!</p>
+		<input type="text" id="GradeNumber" placeholder="? / ?">
+		<br>
+		<input type="button" value="Submit" onclick="GradeSubmit()" id="GradeSubmit">
+		<input type="button" value="Clear" onclick="GradeClear()" id="GradeClear">
+	</div>
+	<br>
+	<div class="Box" id="AgeToGrade">
+		<p1>Age to Grade</p1>
+		<hr id="AgeLine">
+		<p id="AgeExplain">This is very likely to not work for many reasons.</p>
+		<p id="AgeAnswer">This will tell you what grade.</p>
+		<input type="number" id="AgeInput" placeholder="What age?">
+		<br>
+		<input type="button" value="Submit" onclick="Age()" id="AgeButton">
+	</div>
+	<br>
+	<div class="Box" id="ZeroCalc">
+		<p1>Zero to X</p1>
+		<hr id="ZeroLine">
+		<p id="ZeroCalcExplain">If you were to count from 1-x, how many zeros would you need to write? This program will
+			brute
+			force the solution for you.</p>
+		<p id="ZeroCalcAnswer">You haven't answered yet...</p>
+		<input id="ZeroCalcInput" type="number" placeholder="What number would you count up to?">
+		<br>
+		<input type="button" id="ZeroCalcButton" value="Submit" onclick="ZeroCalc()">
+	</div>
+	<br>
+	<div class="Box" id="Palindrome">
+		<p1>Palindrome</p1>
+		<hr id="PalindromeLine">
+		<p id="PalindromeExplain">This will show the actual number reached when becoming palindrome.</p>
+		<p id="PalindromeAnswer">This will tell you the number, and division of the reverse add process before the number becomes a palindrome you type in.</p>
+		<input type="number" id="PalindromeInput" placeholder="What number would you like to enter?" maxlength="10">
+		<br>
+		<input type="button" onclick="Palindrome()" value="Submit" id="PalindromeButton">
+	</div>
+    <br>
+    <div class="Box">
+    <p>I'm getting lazy so I'ma start just posting python embeds. Sorry.</p>
+    </div>
+    <br>
+    <div>
+		<p1>Four is Cosmic</p1>
+        <hr width="900">
+        <br>
+        <iframe width="850" height="500" src="https://codehs.com/sandbox/id/4-is-cosmic-ayYyji/embed/?display_mode=default&show_file_tree=False" frameborder="0" allowfullscreen class="video-iframe"></iframe>
+	</div>
+	</div>
+</body>

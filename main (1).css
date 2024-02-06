@@ -1,0 +1,143 @@
+.TopBar {
+	background: linear-gradient(to bottom right, #010e21, #010c12);
+	overflow: hidden;
+}
+
+.TopBar a {
+	color: white;
+	font-size: 17px;
+	float: left;
+	text-decoration: none;
+  text-align: center;
+  padding: 14px 16px;
+} 
+
+.TopBar a.Active {
+	background: #2a2e37;
+} 
+
+.TopBar a:hover {
+	background-color: #31353f;
+}
+
+p, p1, body, #Title {
+	color: white;
+	font-family: "arial";
+}
+
+p:hover {
+	color: #e8e8e8;
+}
+
+p {
+	font-size: 20px;
+}
+
+p1 {
+	font-size: 25px;
+}
+
+#Title {
+	font-size: 35px;
+}
+
+.clickable {
+	-webkit-transition-duration: 0.2s;
+  -webkit-transition-property: transform;
+	transition-property: transform;
+	transition-duration: 0.2s;
+}
+
+.clickable:hover {
+	cursor: pointer;
+  -webkit-transform:scale(1.05,1.05) rotate(2deg);
+	transform:scale(1.05,1.05) rotate(2deg);
+}
+
+.clickable:active {
+	-webkit-transform:scale(0.8,0.8);
+	transform:scale(0.8,0.8);
+}
+
+video {
+	border-radius: 15px;
+}
+
+body {
+	background: linear-gradient(to bottom right, #072a5f, #2b3c5e);
+/* 	background: linear-gradient(to bottom right, #70479e, #3c2776); */
+	font-family: "arial";
+}
+
+* {
+	text-align: center;
+}
+
+.Container {
+	position: relative;
+  min-height: 100%;
+}
+
+.Contentwrap {
+	padding-bottom: 2.5rem;
+}
+
+footer {
+	background: linear-gradient(to bottom right, #010e21, #010c12);
+	padding: 14px 16px;
+	text-align: center;
+	position:absolute;
+	bottom: 0;
+	width: 98%;  
+}
+
+input[type=button] {
+	display: block;
+	border: 0px;
+	font-family: "arial";
+	padding: 7px 20px;
+	margin: auto;
+	cursor: pointer;
+  -webkit-transition-duration: 0.1s;
+  -webkit-transition-property: transform;
+	transition-property: transform;
+	transition-duration: 0.1s;
+}
+
+input[type=button]:hover {
+  -webkit-transform:scale(1.1,1.1) rotate(-3deg);
+	transform:scale(1.1,1.1) rotate(-3deg);
+}
+
+input[type=button]:active {
+	-webkit-transform:scale(0.8,0.8);
+	transform:scale(0.8,0.8);
+}
+
+input[type=text] {
+	padding: 8px 10%;
+	border: 0px;
+	font-family: "arial";
+	display: block;
+	margin: auto;
+}
+
+input[type=number] {
+	padding: 8px 10%;
+	border: 0px;
+	font-family: "arial";
+	display: block;
+	margin: auto;
+}
+
+.Box {
+background: linear-gradient(to bottom right, #010c12, #010e21);
+	/* 	background: #34353d; */
+	padding: 15px;
+	max-width: 900px;
+	margin: auto;
+	border-radius: 40px;
+	filter: drop-shadow(8px 8px 5px black);
+	border-style: none solid double;
+	border-color: #06293c
+}
