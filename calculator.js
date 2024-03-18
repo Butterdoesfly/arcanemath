@@ -124,6 +124,51 @@ function Age() {
 	};
 };
 
+function Synthesis() {
+	var divisor = document.getElementById("divisor");
+	
+	var num0_0 = document.getElementById("0-0");
+	var num0_1 = document.getElementById("0-1");
+	var num0_2 = document.getElementById("0-2");
+	var num0_3 = document.getElementById("0-3");
+	var num0_4 = document.getElementById("0-4");
+	
+	var num1_0 = document.getElementById("1-0");
+	var num1_1 = document.getElementById("1-1");
+	var num1_2 = document.getElementById("1-2");
+	var num1_3 = document.getElementById("1-3");
+	var num1_4 = document.getElementById("1-4");
+	
+	var num2_0 = document.getElementById("2-0");
+	var num2_1 = document.getElementById("2-1");
+	var num2_2 = document.getElementById("2-2");
+	var num2_3 = document.getElementById("2-3");
+	var num2_4 = document.getElementById("2-4");
+	
+	num2_0.innerHTML = eval(num0_0.value);
+	
+	num1_1.innerHTML = eval(divisor.value) * eval(num2_0.innerHTML);
+	
+	
+	num2_1.innerHTML = eval(num0_1.value) + eval(num1_1.innerHTML);
+	
+	num1_2.innerHTML = eval(divisor.value) * eval(num2_1.innerHTML);
+	
+	
+	num2_2.innerHTML = eval(num0_2.value) + eval(num1_2.innerHTML);
+	
+	num1_3.innerHTML = eval(divisor.value) * eval(num2_2.innerHTML);
+	
+	
+	num2_3.innerHTML = eval(num0_3.value) + eval(num1_3.innerHTML);
+	
+	num1_4.innerHTML = eval(divisor.value) * eval(num2_2.innerHTML);
+	
+	
+	num2_4.innerHTML = eval(num0_4.value) + eval(num1_4.innerHTML);
+	
+	};
+
 window.onload=function(){
   let FractionInput = document.getElementById("FractionInput");
 	FractionInput.addEventListener("keydown", (e) => {
